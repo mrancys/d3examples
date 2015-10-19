@@ -1,0 +1,50 @@
+<!DOCTYPPE html>
+<html>
+<head>
+	<title>All about SVG</title>
+	<meta charset="utf-8">
+	<script src="d3.min.js"></script>
+	<style type="text/css">
+		text {
+			fill: white;
+			font-family: sans-serif;
+			font-size: 10px;
+		}
+		path {
+			stroke-width: 4;
+		}
+	</style>
+</head>
+<body>
+		<div id="content">
+			<h1>All about SVG</h1>
+			<svg width="300px" height="200px" xlmns="http://www.w3.org/2000/svg">
+				<g>
+				<path d="M 10 25
+						 L 10 75
+						 L 60 75
+						 Z" 
+				stroke="black" stroke-width="2" fill="red"/>
+				<text x="15" y="60">red</text>
+			</g>
+			<g transform="translate(20, 30)">
+				<path d="M 20 25
+						 L 20 75
+						 L 70 75
+						 Z" stroke="black" stroke-width="2" fill="green"/>
+				 <text x="25" y="60">green</text>
+			</g>
+			<g transform="translate(40, 60)">
+				<path d="M 30 25
+						 L 30 75
+						 L 80 75
+						 Z" stroke="black" stroke-width="2" fill="blue"/>
+			 	 <text x="35" y="60">blue</text>
+			 </g>
+			</svg>
+		</div>
+		<script>
+			
+		</script>
+</body>
+</html>
